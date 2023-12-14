@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,10 +6,13 @@
     <meta name="viewport" , content="width=device-width, initial-scale=1.0" />
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="flappybird.css" />
-    <script src="flappybirdFinalizado.js "></script>
+    <script src="flappybird.js "></script>
   </head>
   <body>
-    <!-- Tag Canvas pode ser usada como um espaço de desenho e animações -->
-    <canvas id="tabuleiro"></canvas>
+    <div id="conteineraposta">
+        <label for="quantiaAposta">Quantia da Aposta: </label>
+        <input type="number" id="quantiaAposta" min="0" step="1" value="0" />
+        <button id="iniciar" onclick="iniciarJogo()">Iniciar Jogo</button>
+    </div>
   </body>
 </html>
